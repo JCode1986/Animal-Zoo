@@ -1,7 +1,7 @@
-﻿using System;
-using Zoo.Classes;
+﻿using Animal_Zoo.Classes;
+using System;
 
-namespace Animal_Zoo
+namespace Animal_Zoo.Classes
 {
     class Program
     {
@@ -12,12 +12,18 @@ namespace Animal_Zoo
             Liger liger = new Liger();
             KomodoDragon komodoDragon = new KomodoDragon();
             Anaconda anaconda = new Anaconda();
+            Penguin penguin = new Penguin();
 
-            Console.WriteLine(liger.LigerInfo());
-            Console.WriteLine(sloth.SlothInfo());
+
+            //Classes
+            /*Console.WriteLine(liger.LigerInfo());
             Console.WriteLine(kangaroo.KangarooInfo());
-            Console.WriteLine(komodoDragon.KomodoDragonInfo());
-            Console.WriteLine(anaconda.AnacondaInfo());
+            Console.WriteLine(komodoDragon.KomodoDragonInfo()); */
+
+            //Interface
+            Console.WriteLine(penguin.GoSwim(26));
+            Console.WriteLine(sloth.MagicallyIntroduceSelfToHumans("George", 12));
+            Console.WriteLine(anaconda.DoAnotherRandomThing(65));
         }
     }
 }

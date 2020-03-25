@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Zoo;
 
-namespace Zoo.Classes
+namespace Animal_Zoo.Classes
 {
     //Mammal can be astract; other classes derived from Mammal
     abstract class Mammal : Animal // Show Inheritance through the colon (:) symbol

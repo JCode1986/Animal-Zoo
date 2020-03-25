@@ -15,7 +15,7 @@
 Clone this repository to your local machine.
 
 ```
-$ git clone [repo clone url here]
+$ git clone [https://github.com/JCode1986/Animal-Zoo.git]
 ```
 
 ### To run the program from Visual Studio:
@@ -23,9 +23,9 @@ Select ```File``` -> ```Open``` -> ```Project/Solution```
 
 Next navigate to the location you cloned the Repository.
 
-Double click on the ```Lab01-About-Me``` directory.
+Double click on the ```Animal-Zoo``` directory.
 
-Then select and open ```AboutMe.sln```
+Then select and open ```Animal-Zoo.sln```
 
 ---
 

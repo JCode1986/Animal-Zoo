@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Zoo.Classes
+namespace Animal_Zoo.Classes
 {
     abstract class Lizard : Reptile
     {

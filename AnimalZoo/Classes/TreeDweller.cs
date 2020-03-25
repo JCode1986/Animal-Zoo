@@ -1,4 +1,4 @@
-﻿namespace Zoo.Classes
+﻿namespace Animal_Zoo.Classes
 {
     abstract class TreeDweller : Mammal
     {
