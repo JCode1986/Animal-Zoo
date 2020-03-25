@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Zoo.Classes
+namespace Animal_Zoo.Classes
 {
-    abstract class Marsupial : Mammal
+    public abstract class Marsupial : Mammal
     {
         public virtual bool HasPouch { get; set; } = true;
 

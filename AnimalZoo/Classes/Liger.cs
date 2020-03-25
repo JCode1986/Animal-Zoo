@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Zoo.Classes
+namespace Animal_Zoo.Classes
 {
-    class Liger : Feline
+    public class Liger : Feline
     {
         public override int AverageWeightLBS { get; set; } = 1000;
         public override decimal AverageMaxSpeedMPH { get; set; } = 50;

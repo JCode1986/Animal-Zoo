@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Zoo.Classes
+namespace Animal_Zoo.Classes
 {
-    abstract class Feline : Mammal
+    public abstract class Feline : Mammal
     {
         public virtual bool HasFangs { get; set; } = true;
 

@@ -2,11 +2,18 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Zoo.Classes
+namespace Animal_Zoo.Classes
 {
-    class Anaconda : Snake
+    public class Anaconda : Snake
     {
-        public override int AverageWeightLBS { get; set; } = 350;
+        //From interface
+
+
+
+
+        // From abstract class
+
+       /* public override int AverageWeightLBS { get; set; } = 350;
         public override decimal AverageMaxSpeedMPH { get; set; } = 1;
         public override string AverageLength { get; set; } = "20 ft";
         public override string Diet { get; set; } = "Carnivore";
@@ -29,6 +36,6 @@ namespace Zoo.Classes
         public string AnacondaInfo()
         {
             return $"\nAnaconda:{ReptileInfo()}{SnakeInfo()}a semiaquatic snake of the boa family that may grow to a great size, native to tropical South America";
-        }
+        }*/
     }
 }
