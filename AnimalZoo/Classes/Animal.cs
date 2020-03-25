@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Animal_Zoo.Classes
 {
-    abstract class Animal
+    public abstract class Animal
     {
         public abstract int AverageWeightLBS { get; set; }
         public abstract decimal AverageMaxSpeedMPH { get; set; }

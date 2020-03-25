@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Animal_Zoo.Classes
 {
-    class Anaconda : Snake
+    public class Anaconda : Snake
     {
         //From interface
 

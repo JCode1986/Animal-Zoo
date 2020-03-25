@@ -5,7 +5,7 @@ using System.Text;
 namespace Animal_Zoo.Classes
 {
     //Mammal can be astract; other classes derived from Mammal
-    abstract class Mammal : Animal // Show Inheritance through the colon (:) symbol
+    public abstract class Mammal : Animal // Show Inheritance through the colon (:) symbol
     {
         public bool HasFur { get; set; } = true;
 

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Animal_Zoo.Classes
 {
-    class Penguin : ISwim
+    public class Penguin : ISwim
     {
         public string GoDiveUnderWater()
         {

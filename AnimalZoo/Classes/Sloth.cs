@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Animal_Zoo.Classes
 {
-    class Sloth : IGreet, IDoRandomThing
+    public class Sloth : IGreet, IDoRandomThing
     {
         public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public int Age { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

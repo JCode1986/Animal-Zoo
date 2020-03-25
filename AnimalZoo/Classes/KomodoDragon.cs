@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Animal_Zoo.Classes
 {
-    class KomodoDragon : Lizard
+    public class KomodoDragon : Lizard
     {
         public override int AverageWeightLBS { get; set; } = 190;
         public override decimal AverageMaxSpeedMPH { get; set; } = 12;

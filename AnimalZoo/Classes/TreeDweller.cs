@@ -1,6 +1,6 @@
 ﻿namespace Animal_Zoo.Classes
 {
-    abstract class TreeDweller : Mammal
+    public abstract class TreeDweller : Mammal
     {
         public virtual bool IsClimber { get; set; }
 

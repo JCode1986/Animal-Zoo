@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Animal_Zoo.Classes
 {
-    class Kangaroo : Marsupial
+    public class Kangaroo : Marsupial
     {
         public override int AverageWeightLBS { get; set; } = 85;
         public override decimal AverageMaxSpeedMPH { get; set; } = 44;

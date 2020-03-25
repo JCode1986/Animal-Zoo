@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Animal_Zoo.Classes
 {
-    abstract class Snake : IGreet, IDoRandomThing
+    public abstract class Snake : IGreet, IDoRandomThing
     {
         public string DoAnotherRandomThing(int irritationLevel)
         {

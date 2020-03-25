@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Animal_Zoo.Classes
 {
-    abstract class Lizard : Reptile
+    public abstract class Lizard : Reptile
     {
         public bool HasTail { get; set; } = true;
 
