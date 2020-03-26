@@ -38,7 +38,6 @@ namespace Animal_Zoo.Classes
                         Kangaroo kangaroo = new Kangaroo();
                         string kangarooResponse = AnimalMenu();
                         AnimalInfo(kangarooResponse, kangaroo);
-                        Start();
                         break;
 
                     case "2":
@@ -123,7 +122,6 @@ namespace Animal_Zoo.Classes
             Console.WriteLine("'5' - Sound");
             Console.WriteLine("'6' - Eat");
             Console.WriteLine("'7' - Information");
-            Console.Write("What would you like to know about the kangaroo?: ");
             string input = Console.ReadLine();
             Console.WriteLine();
             return input;
