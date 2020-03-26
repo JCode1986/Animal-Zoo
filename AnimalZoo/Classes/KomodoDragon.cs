@@ -26,7 +26,7 @@ namespace Animal_Zoo.Classes
             return "hissing";
         }
 
-        public string KomodoDragonInfo()
+        public override string AnimalInfo()
         {
             return $"\nKomodo Dragon: {base.ReptileInfo()}{base.LizardInfo()}Fierce hunters they can eat very large prey, such as large water buffalo, deer, carrion, pigs and even humans.";
         }

@@ -17,5 +17,7 @@ namespace Animal_Zoo.Classes
 
         public abstract string Eat();
 
+        public abstract string AnimalInfo();
+
     }
 }
