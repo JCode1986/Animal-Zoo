@@ -9,10 +9,6 @@ namespace Animal_Zoo.Classes
         static void Main(string[] args)
         {
             Start();
-
-
-            Anaconda anaconda = new Anaconda();
-
         }
 
         static void Start()
@@ -20,7 +16,7 @@ namespace Animal_Zoo.Classes
             try
             {
                 string input = "";
-                Console.WriteLine("\nHi! Welcome the Animal Zoo!");
+                Console.WriteLine("\nHi! Welcome the Animal Zoo!\n");
                 Console.WriteLine("Here are the animals available!");
                 Console.WriteLine("'1' - Kangaroo");
                 Console.WriteLine("'2' - Liger");
@@ -29,6 +25,7 @@ namespace Animal_Zoo.Classes
                 Console.WriteLine("'5' - Sloth");
                 Console.WriteLine("'6' - Anaconda");
                 Console.WriteLine("'7' - Look at the flying animals");
+                Console.WriteLine("'x' - To exit Zoo at anytime.");
                 Console.Write("Which animal would you like to look at?: ");
                 input = Console.ReadLine();
 
@@ -54,53 +51,39 @@ namespace Animal_Zoo.Classes
 
                     case "4":
                         Penguin penguin = new Penguin();
-                        Console.Write("'1' Go underwater? or '2' Go swim?: ");
+                        Console.Write("\n'1' Go underwater? or '2' Go swim?: ");
                         string penguinReponse = Console.ReadLine();
                         if (penguinReponse == "1") Console.WriteLine(penguin.GoDiveUnderWater());
                         if (penguinReponse == "2")
                         {
-                            Console.Write("How fast (mph) would you like the penguin to swim?: ");
-                            Console.WriteLine();
+                            Console.Write("\nHow fast (mph) would you like the penguin to swim?: ");
                             int speed = Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine();
                             Console.WriteLine(penguin.GoSwim(speed));
                         }
                         break;
 
                     case "5":
                         Sloth sloth = new Sloth();
+                        SpecialAnimals(sloth, sloth);
+                        break;
 
-                        Console.WriteLine("The sloth can do these things:");
-                        Console.WriteLine("'1' - Do a random thing");
-                        Console.WriteLine("'2' - Do another random thing based on irritation level out of a 100");
-                        Console.WriteLine("'3' - Magically introduce self after given a name and age");
-                        Console.Write("What would you like the sloth to do?");
-
-                        string slothResponse = Console.ReadLine();
-
-                        if (slothResponse == "1") Console.WriteLine(sloth.DoRandomThing());
-                        if (slothResponse == "2")
-                        {
-                            Console.WriteLine("Enter a number out of 100: ");
-                            int randomInput = Convert.ToInt32(Console.ReadLine());
-                            Console.WriteLine(sloth.DoAnotherRandomThing(randomInput));
-                        }
-                        if (slothResponse == "3")
-                        {
-                            Console.Write("Name: ");
-                            string name = Console.ReadLine();
-                            Console.Write("Age: ");
-                            int age = Convert.ToInt32(Console.ReadLine());
-                            Console.WriteLine(sloth.MagicallyIntroduceSelfToHumans(name, age));
-                        }
-
+                    case "6":
+                        Anaconda anaconda = new Anaconda();
+                        SpecialAnimals(anaconda, anaconda);
                         break;
 
                     case "7":
                         Console.WriteLine(FlyingAnimals());
                         break;
 
+                    case "x":
+                        Console.WriteLine("Thank you for visiting.");
+                        Environment.Exit(0);
+                        break;
+
                     default:
-                        Console.WriteLine("Enter a valid number");
+                        Console.WriteLine("Uh oh something went wrong.");
                         break;
                 }
                 Start();
@@ -121,7 +104,8 @@ namespace Animal_Zoo.Classes
             Console.WriteLine("'5' - Ability");
             Console.WriteLine("'5' - Sound");
             Console.WriteLine("'6' - Eat");
-            Console.WriteLine("'7' - Information");
+            Console.WriteLine("'7' - Information\n");
+            Console.Write("What would you like to do?: ");
             string input = Console.ReadLine();
             Console.WriteLine();
             return input;
@@ -136,6 +120,33 @@ namespace Animal_Zoo.Classes
             if (input == "5") Console.WriteLine(animal.Ability());
             if (input == "6") Console.WriteLine(animal.Eat());
             if (input == "7") Console.WriteLine(animal.AnimalInfo());
+        }
+
+        static string SpecialAnimals(IGreet greet, IDoRandomThing randomthing)
+        {
+            Console.WriteLine("\n'1' - Do a random thing");
+            Console.WriteLine("'2' - Do another random thing based on irritation level out of a 100");
+            Console.WriteLine("'3' - Magically introduce self after given a name and age");
+            Console.Write("\nWhat would you like to do?");
+
+            string input = Console.ReadLine();
+
+            if (input == "1") Console.WriteLine(randomthing.DoRandomThing());
+            if (input == "2")
+            {
+                Console.WriteLine("\nEnter a number out of 100: ");
+                int randomInput = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(randomthing.DoAnotherRandomThing(randomInput));
+            }
+            if (input == "3")
+            {
+                Console.Write("\nName: ");
+                string name = Console.ReadLine();
+                Console.Write("\nAge: ");
+                int age = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(greet.MagicallyIntroduceSelfToHumans(name, age));
+            }
+            return "";
         }
 
         static string FlyingAnimals()
@@ -155,12 +166,12 @@ namespace Animal_Zoo.Classes
                 if (flyer is Pelican)
                 {
                     var pel = (Pelican)flyer;
-                    Console.WriteLine($"Pelican has a wingspan of {pel.WingSpan}");
+                    Console.WriteLine($"Pelican has an average wingspan of {pel.WingSpan}");
                 }
                 else if (flyer is Eagle)
                 {
                     var eag = (Eagle)flyer;
-                    Console.WriteLine($"Eagle has a wingspan of {eagle.WingSpan}");
+                    Console.WriteLine($"Eagle has an average wingspan of {eagle.WingSpan}");
                 }
                 fly(flyers[i]);
             }
