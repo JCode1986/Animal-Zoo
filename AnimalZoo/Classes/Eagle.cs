@@ -7,7 +7,7 @@ namespace Animal_Zoo.Classes
 {
     public class Eagle : IFly
     {
-        public int WingSpan { get; set; } = 9;
+        public int WingSpan { get; set; } = 7;
 
         public string FlapWings()
         {
