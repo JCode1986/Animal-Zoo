@@ -27,7 +27,7 @@ namespace Animal_Zoo.Classes
             return $"{base.Hunt()}. *spots a gazelle* {Sound()} *pounce and eats*";
         }
 
-        public string LigerInfo()
+        public override string AnimalInfo()
         {
             return $"Liger:{base.MammalInfo()}{base.FelineInfo()}The liger is a hybrid offspring of a male lion and a female tiger.";
         }

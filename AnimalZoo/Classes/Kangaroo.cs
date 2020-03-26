@@ -26,7 +26,7 @@ namespace Animal_Zoo.Classes
             return $"{Sound()}*Pulls flowers out of pouch and start eating*";
         }
 
-        public string KangarooInfo()
+        public override string AnimalInfo()
         {
             return $"\nKangaroo:{base.MammalInfo()}{base.MarsupialInfo()}\nThe kangaroo is a marsupial from the family Macropodidae (macropods, meaning 'large foot'). In common use the term is used to describe the largest species from this family, especially the red kangaroo, antilopine kangaroo, eastern grey kangaroo, and western grey kangaroo. Kangaroos are indigenous to Australia.";
         }
