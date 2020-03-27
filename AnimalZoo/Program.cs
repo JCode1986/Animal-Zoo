@@ -11,6 +11,9 @@ namespace Animal_Zoo.Classes
             Start();
         }
 
+        /// <summary>
+        /// Starts the app
+        /// </summary>
         static void Start()
         {
             try
@@ -93,7 +96,10 @@ namespace Animal_Zoo.Classes
                 Console.WriteLine(e.Message);
             }
         }
-
+        /// <summary>
+        /// Animal menu for the user to choose from
+        /// </summary>
+        /// <returns>User's input</returns>
         static string AnimalMenu()
         {
             Console.Clear();
@@ -111,6 +117,11 @@ namespace Animal_Zoo.Classes
             return input;
         }
 
+        /// <summary>
+        /// Animal info for the user to choose from
+        /// </summary>
+        /// <param name="input">users input</param>
+        /// <param name="animal">class</param>
         static void AnimalInfo(string input, Animal animal)
         {
             if (input == "1") Console.WriteLine(animal.AverageWeightLBS);
@@ -122,6 +133,12 @@ namespace Animal_Zoo.Classes
             if (input == "7") Console.WriteLine(animal.AnimalInfo());
         }
 
+        /// <summary>
+        /// Method that takes in two interfaces. Asks for users input on what the animal should do.
+        /// </summary>
+        /// <param name="greet">Interface</param>
+        /// <param name="randomthing">Interface</param>
+        /// <returns>string</returns>
         static string SpecialAnimals(IGreet greet, IDoRandomThing randomthing)
         {
             Console.WriteLine("\n'1' - Do a random thing");
@@ -149,6 +166,10 @@ namespace Animal_Zoo.Classes
             return "";
         }
 
+        /// <summary>
+        /// Method for flying animals with interfaces.
+        /// </summary>
+        /// <returns>string</returns>
         static string FlyingAnimals()
         {
             Eagle eagle = new Eagle();
@@ -177,6 +198,12 @@ namespace Animal_Zoo.Classes
             }
             return "";
         }
+
+        /// <summary>
+        /// Method that takes in a class with implemented interface. Calls most of the interfaces methods.
+        /// </summary>
+        /// <param name="bird">Interace</param>
+        /// <returns>string</returns>
         static string fly(IFly bird)
         {
             Console.WriteLine(bird.SpreadWings());

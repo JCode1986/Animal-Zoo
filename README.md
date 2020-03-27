@@ -31,12 +31,14 @@ Then select and open ```Animal-Zoo.sln```
 ---
 
 ### Visuals
-***[Add screenshots of your application in action]***
 
 #### Application Start
 ![Image 1](assets/start.png)
 #### Using the Application
 ![Image 1](assets/visual.png)
+
+### Visuals
+![Image 1](assets/UML.jpg)
 
 ---
 
